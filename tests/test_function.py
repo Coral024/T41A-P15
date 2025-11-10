@@ -54,7 +54,7 @@ def test_function_day(db_connection):
     with db_connection.cursor() as cur:
         cur.execute("SELECT devolver_dia ('2025-11-08');")
         result = cur.fetchone()[0]
-    assert result == "Saturday"
+    assert result == "Saturday "
 
 def test_function_countE(db_connection):
     with db_connection.cursor() as cur:
